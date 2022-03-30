@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        td {
+            font-size: 40px;
+        }
+        
+        .grade {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .teamlogodiv {
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+        }
+        
+        #team1logoimg {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            left: 0;
+            margin-left: -22.5%;
+            margin-top: -15%;
+        }
+        
+        #team2logoimg {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            left: 0;
+            margin-left: -30%;
+            margin-top: -25%;
+        }
+        
+        #team3logoimg {
+            width: 59px;
+            height: 59px;
+            position: relative;
+            left: 0;
+            margin-left: -8.25%;
+            margin-top: -8.25%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>순위</th>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="grade">1</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="grade">2</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="grade">3</div>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="grade">4</div>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>팀명</th>
+                        <th>승점</th>
+                        <th>승</th>
+                        <th>무</th>
+                        <th>패</th>
+                        <th>득점</th>
+                        <th>실점</th>
+                        <th>득실차</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="teamlogodiv"><img id="team1logoimg" src="/2grade/source/team1.jpg"></div> 1팀</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="teamlogodiv"><img id="team2logoimg" src="/2grade/source/team2.jpg"></div> 2팀</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="teamlogodiv"><img id="team3logoimg" src="/2grade/source/team3.jpg"></div> 3팀</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4팀</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function moveUp(el) {
+            var $tr = $(el).parent().parent(); // 클릭한 버튼이 속한 tr 요소
+            $tr.prev().before($tr); // 현재 tr 의 이전 tr 앞에 선택한 tr 넣기
+        }
+
+        function moveDown(el) {
+            var $tr = $(el).parent().parent(); // 클릭한 버튼이 속한 tr 요소
+            $tr.next().after($tr); // 현재 tr 의 다음 tr 뒤에 선택한 tr 넣기
+        }
+    </script>
+</body>
+
+</html>
