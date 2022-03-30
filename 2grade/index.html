@@ -106,13 +106,13 @@
                 1
             </div>
             <div style="width: 120px; border-bottom: 1.5px solid gray;">
-                2
+                1
             </div>
             <div style="width: 120px; border-bottom: 1.5px solid gray;">
-                3
+                1
             </div>
             <div style="width: 120px; border-bottom: 1.5px solid gray;">
-                4
+                1
             </div>
         </div>
         <div id="metha">
@@ -141,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="vertical">
+            <div class="vertical" id="team1">
                 <div class="notgaro" style="width: 150px;">
                     <div class="teamlogodiv">
                         <img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">
@@ -173,7 +173,7 @@
                     0
                 </div>
             </div>
-            <div class="vertical">
+            <div class="vertical" id="team2">
                 <div class="notgaro" style="width: 150px;">
                     <div class="teamlogodiv">
                         <img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">
@@ -205,7 +205,7 @@
                     0
                 </div>
             </div>
-            <div class="vertical">
+            <div class="vertical" id="team3">
                 <div class="notgaro" style="width: 150px;">
                     <div class="teamlogodiv">
                         <img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">
@@ -237,7 +237,7 @@
                     0
                 </div>
             </div>
-            <div class="vertical">
+            <div class="vertical" id="team4">
                 <div class="notgaro" style="width: 150px;">
                     <div class="teamlogodiv">
                         <img id="team4logoimg" src="/soccer/2grade/source/team4.jpg">
@@ -272,6 +272,10 @@
         </div>
     </div>
     <script>
+        //4위 부터 작성
+        $("#team4").insertAfter("#team3");
+        $("#team3").insertAfter("#team2");
+        $("#team2").insertAfter("#team1");
     </script>
 </body>
 
