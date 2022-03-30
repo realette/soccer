@@ -5,19 +5,6 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
-        td {
-            font-size: 40px;
-            align-items: center;
-            border-bottom: 1px black solid;
-            border-top: 1px black solid;
-        }
-        
-        .grade {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-        }
-        
         .teamlogodiv {
             text-align: center;
             overflow: hidden;
@@ -57,84 +44,37 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th>순위</th>
-                    </tr>
-                    <tr>
-                        <td class="grade">1</td>
-                    </tr>
-                    <tr>
-                        <td class="grade">2</td>
-                    </tr>
-                    <tr>
-                        <td class="grade">3</td>
-                    </tr>
-                    <tr>
-                        <td class="grade">4</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <th>팀명</th>
-                        <th>승점</th>
-                        <th>승</th>
-                        <th>무</th>
-                        <th>패</th>
-                        <th>득점</th>
-                        <th>실점</th>
-                        <th>득실차</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamlogodiv"><img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">1팀</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td class="teamlogodiv"><img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">2팀</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td class="teamlogodiv"><img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">3팀</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>4팀</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <div>
+        <div>
+            순위
+        </div>
+        <div>
+            1
+        </div>
+        <div>
+            2
+        </div>
+        <div>
+            3
+        </div>
+        <div>
+            4
+        </div>
+    </div>
+    <div>
+        <div class="teamlogodiv">
+            <img id="team1logoimg" src="/2grade/source/team1.jpg">
+        </div>
+        <div class="teamlogodiv">
+            <img id="team2logoimg" src="/2grade/source/team2.jpg">
+        </div>
+        <div class="teamlogodiv">
+            <img id="team3logoimg" src="/2grade/source/team3.jpg">
+        </div>
+        <div class="teamlogodiv">
+            <img id="team4logoimg" src="/2grade/source/team4.jpg">
+        </div>
+    </div>
     <script>
     </script>
 </body>
