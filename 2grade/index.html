@@ -60,66 +60,77 @@
             float: left;
         }
         
-        .garo {
+        .garo,
+        .teamlogodiv {
             float: left;
+            border-bottom: 1.5px solid gray;
         }
         
         .vertical {
             display: flex;
+        }
+        
+        #etha {
+            border-left: 1.5px solid gray;
+            border-right: 1.5px solid gray;
+        }
+        
+        #metha .garo {
+            border-right: 1.5px solid gray;
         }
     </style>
 </head>
 
 <body>
     <div id="etha">
-        <div style="width: 120px;">
+        <div style="width: 120px; border-top: 1.5px solid gray; border-bottom: 1.5px solid gray;">
             순위
         </div>
-        <div style="width: 120px;">
+        <div style="width: 120px; border-bottom: 1.5px solid gray;">
             1
         </div>
-        <div style="width: 120px;">
+        <div style="width: 120px; border-bottom: 1.5px solid gray;">
             2
         </div>
-        <div style="width: 120px;">
+        <div style="width: 120px; border-bottom: 1.5px solid gray;">
             3
         </div>
-        <div style="width: 120px;">
+        <div style="width: 120px; border-bottom: 1.5px solid gray;">
             4
         </div>
     </div>
     <div id="metha">
 
         <div class="vertical">
-            <div class="garo" style="width: 150px;">
+            <div class="garo" style="width: 150px; border-top: 1.5px solid">
                 팀명
             </div>
-            <div class="garo" style="width: 120px;">
+            <div class="garo" style="width: 120px; border-top: 1.5px solid">
                 경기
             </div>
-            <div class="garo" style="width: 120px;">
+            <div class="garo" style="width: 120px; border-top: 1.5px solid">
                 승점
             </div>
-            <div class="garo" style="width: 80px;">
+            <div class="garo" style="width: 80px; border-top: 1.5px solid">
                 승
             </div>
-            <div class="garo" style="width: 80px;">
+            <div class="garo" style="width: 80px; border-top: 1.5px solid">
                 무
             </div>
-            <div class="garo" style="width: 80px;">
+            <div class="garo" style="width: 80px; border-top: 1.5px solid">
                 패
             </div>
-            <div class="garo" style="width: 180px;">
+            <div class="garo" style="width: 180px; border-top: 1.5px solid">
                 득실차
             </div>
         </div>
 
         <div class="vertical">
-            <div class="garo">
-                <div class="teamlogodiv">
-                    <img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">
-                </div>
+
+            <div class="teamlogodiv">
+                <img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">
             </div>
+
             <div class="garo" style="width: 100px;">
                 &nbsp1팀
             </div>
@@ -149,11 +160,11 @@
             </div>
         </div>
         <div class="vertical">
-            <div class="garo">
-                <div class="teamlogodiv">
-                    <img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">
-                </div>
+
+            <div class="teamlogodiv">
+                <img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">
             </div>
+
             <div class="garo" style="width: 100px;">
                 &nbsp2팀
             </div>
@@ -183,11 +194,11 @@
             </div>
         </div>
         <div class="vertical">
-            <div class="garo">
-                <div class="teamlogodiv">
-                    <img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">
-                </div>
+
+            <div class="teamlogodiv">
+                <img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">
             </div>
+
             <div class="garo" style="width: 100px;">
                 &nbsp3팀
             </div>
@@ -217,11 +228,11 @@
             </div>
         </div>
         <div class="vertical">
-            <div class="garo">
-                <div class="teamlogodiv">
-                    <img id="team4logoimg" src="/soccer/2grade/source/team4.jpg">
-                </div>
+
+            <div class="teamlogodiv">
+                <img id="team4logoimg" src="/soccer/2grade/source/team4.jpg">
             </div>
+
             <div class="garo" style="width: 100px;">
                 &nbsp4팀
             </div>
