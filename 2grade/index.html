@@ -11,6 +11,7 @@
         }
         
         .teamlogodiv {
+            display: inline-block;
             text-align: center;
             overflow: hidden;
             display: inline-block;
@@ -60,8 +61,13 @@
             float: left;
         }
         
-        .garo,
-        .teamlogodiv {
+        .notgaro {
+            display: flex;
+            border-bottom: 1.5px solid gray;
+            border-right: 1.5px solid gray;
+        }
+        
+        .garo {
             float: left;
             border-bottom: 1.5px solid gray;
         }
@@ -126,12 +132,10 @@
         </div>
 
         <div class="vertical">
-
-            <div class="teamlogodiv">
-                <img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">
-            </div>
-
-            <div class="garo" style="width: 100px;">
+            <div class="notgaro" style="width: 150px;">
+                <div class="teamlogodiv">
+                    <img id="team1logoimg" src="/soccer/2grade/source/team1.jpg">
+                </div>
                 &nbsp1팀
             </div>
             <div class="garo" style="width: 120px;">
@@ -160,12 +164,10 @@
             </div>
         </div>
         <div class="vertical">
-
-            <div class="teamlogodiv">
-                <img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">
-            </div>
-
-            <div class="garo" style="width: 100px;">
+            <div class="notgaro" style="width: 150px;">
+                <div class="teamlogodiv">
+                    <img id="team2logoimg" src="/soccer/2grade/source/team2.jpg">
+                </div>
                 &nbsp2팀
             </div>
             <div class="garo" style="width: 120px;">
@@ -194,12 +196,10 @@
             </div>
         </div>
         <div class="vertical">
-
-            <div class="teamlogodiv">
-                <img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">
-            </div>
-
-            <div class="garo" style="width: 100px;">
+            <div class="notgaro" style="width: 150px;">
+                <div class="teamlogodiv">
+                    <img id="team3logoimg" src="/soccer/2grade/source/team3.jpg">
+                </div>
                 &nbsp3팀
             </div>
             <div class="garo" style="width: 120px;">
@@ -228,12 +228,10 @@
             </div>
         </div>
         <div class="vertical">
-
-            <div class="teamlogodiv">
-                <img id="team4logoimg" src="/soccer/2grade/source/team4.jpg">
-            </div>
-
-            <div class="garo" style="width: 100px;">
+            <div class="notgaro" style="width: 150px;">
+                <div class="teamlogodiv">
+                    <img id="team4logoimg" src="/soccer/2grade/source/team4.jpg">
+                </div>
                 &nbsp4팀
             </div>
             <div class="garo" style="width: 120px;">
