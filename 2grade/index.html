@@ -184,30 +184,22 @@
         
         .modal {
             display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            transform: translate(-50%, -50%);
+            position: absolute;
             z-index: 10;
-            /* Sit on top */
-            left: 50%;
-            top: 50%;
-            width: 200%;
-            /* Full width */
-            height: 200%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
+            top: 125px;
+            left: 25%;
+            transform: translateX(-50%);
         }
         /* Modal Content/Box */
         
         .modal-content {
+            padding: 10px;
+            z-index: 11;
             background-color: #c0c0c0;
-            margin: 15% auto;
             /* 15% from the top and centered */
-            padding: 20px;
             border: 1px solid #888;
-            width: 75%;
+            width: 200%;
+            height: fit-content;
             /* Could be more or less, depending on screen size */
         }
     </style>
@@ -424,7 +416,8 @@
                     <div id="modal1R1" class="modal">
                         <div class="modal-content">
                             <div class="container">
-                                <p>골:</p>
+                                조재건 골 12'<br>(어시스트 주영욱)
+                                <br>주영욱 골 15'<br>(어시스트 김태호)
                             </div>
                         </div>
                     </div>
