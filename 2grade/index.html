@@ -101,6 +101,81 @@
             display: flex;
             justify-content: center;
         }
+        
+        #sche {
+            font-size: 45px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .status {
+            font-size: 30px;
+            border-radius: 15px;
+            height: fit-content;
+        }
+        
+        .befo {
+            color: white;
+            background-color: #008cff;
+            border: 3px solid #008cff;
+        }
+        
+        .prog {
+            color: black;
+            background-color: #ff593c;
+            border: 3px solid #ff593c;
+        }
+        
+        .afte {
+            color: white;
+            background-color: rgb(65, 65, 65);
+            border: 3px solid rgb(65, 65, 65);
+        }
+        
+        .space {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .resu {
+            font-size: 30px;
+            border-radius: 15px;
+            height: fit-content;
+            color: rgb(0, 0, 0);
+            background-color: rgb(163, 163, 163);
+            border: 3px solid rgb(163, 163, 163);
+        }
+        
+        .R {
+            width: fit-content;
+            padding: 5px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #week1,
+        #week2 {
+            width: fit-content;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        #R1 {
+            border: black 1px solid;
+            padding: 20px;
+            width: fit-content;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        hr {
+            border: 1.5px solid gray;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
     </style>
 </head>
 
@@ -286,6 +361,91 @@
         $("#team3").insertAfter("#team2");
         $("#team2").insertAfter("#team1");
     </script>
+    <hr>
+
+    <div id="sche">
+        <div id="R1">
+            <div style="border: 1px black solid; width: fit-content; position: relative; left: 50%; transform: translateX(-50%);">&nbsp;1R&nbsp;</div>
+            <div id="week1">
+                <div style="margin:15px;">4월 첫째 주</div>
+                <div class="vertical R" id="1R1">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 4일 (월)
+                    </div>
+                    <div class="garo space" style="border: none;">1팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">4팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+                <div class="vertical R" id="1R2">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 5일 (화)
+                    </div>
+                    <div class="garo space" style="border: none;">3팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">2팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+                <div class="vertical R" id="1R3">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 6일 (수)
+                    </div>
+                    <div class="garo space" style="border: none;">4팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">2팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+                <div class="vertical R" id="1R4">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 8일 (금)
+                    </div>
+                    <div class="garo space" style="border: none;">3팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">1팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+            </div>
+            <div id="week2">
+                <div style="margin: 15px;">4월 둘째 주</div>
+                <div class="vertical R" id="1R5">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 12일 (화)
+                    </div>
+                    <div class="garo space" style="border: none;">2팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">1팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+                <div class="vertical R" id="1R6">
+                    <div class="garo space status befo">경기 전</div>
+                    <div class="garo" style="border: none;">
+                        4월 15일 (금)
+                    </div>
+                    <div class="garo space" style="border: none;">4팀</div>
+                    <div class="garo" style="border: none;">vs</div>
+                    <div class="garo space" style="border: none;">3팀</div>
+                    <div class="garo space resu">
+                        경기 기록
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
