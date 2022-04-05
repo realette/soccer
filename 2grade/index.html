@@ -133,6 +133,12 @@
             border: 3px solid rgb(65, 65, 65);
         }
         
+        .reco {
+            color: white;
+            background-color: rgb(95, 159, 0);
+            border: 3px solid rgb(95, 159, 0);
+        }
+        
         .space {
             margin-left: 10px;
             margin-right: 10px;
@@ -145,6 +151,12 @@
             color: rgb(0, 0, 0);
             background-color: rgb(163, 163, 163);
             border: 3px solid rgb(163, 163, 163);
+        }
+        
+        .score {
+            color: black;
+            background-color: rgb(243, 214, 214);
+            border: solid rgb(243, 214, 214);
         }
         
         .R {
@@ -185,6 +197,7 @@
         .modal {
             display: none;
             position: absolute;
+            width: max-content;
             z-index: 10;
             top: 125px;
             left: 25%;
@@ -196,11 +209,9 @@
             padding: 10px;
             z-index: 11;
             background-color: #c0c0c0;
-            /* 15% from the top and centered */
             border: 1px solid #888;
             width: fit-content;
             height: fit-content;
-            /* Could be more or less, depending on screen size */
         }
         
         .c1l1 {
@@ -416,10 +427,13 @@
                         4월 4일 (월)
                     </div>
                     <div class="garo space" style="border: none;">1팀</div>
-                    <div class="garo" style="border: none;">1:0</div>
+                    <div class="garo status score" style="font-size: 40px;" style="border: none;">1:0</div>
                     <div class="garo space" style="border: none;">4팀</div>
                     <div class="garo space resu" onmouseover="modal1R1()" onmouseout="modaloff()">
                         경기 기록
+                    </div>
+                    <div class="garo space status reco">
+                        <a target="_blank" href="https://www.instagram.com/p/Cb7SncmhoDQrGJ4qsVF1ZBwEhMTUDOFfjHVpTg0/">골 영상</a>
                     </div>
                     <div id="modal1R1" class="modal">
                         <div class="modal-content">
@@ -440,17 +454,18 @@
                         4월 5일 (화)
                     </div>
                     <div class="garo space" style="border: none;">3팀</div>
-                    <div class="garo" style="border: none;">1:2</div>
+                    <div class="garo status score" style="font-size: 40px;" style="border: none;">1:2</div>
                     <div class="garo space" style="border: none;">2팀</div>
                     <div class="garo space resu" onmouseover="modal1R2()" onmouseout="modaloff()">
                         경기 기록
                     </div>
+                    <div class="garo space status reco">
+                        <a target="_blank" href="https://www.instagram.com/tv/Cb-Mcc1pOrKNElYjAgbvB3lJr1YtL_3cYoNlZs0/">골 영상</a>
+                    </div>
                     <div id="modal1R2" class="modal">
                         <div class="modal-content">
                             <div class="container">
-                                6' 2팀 김희재 골 <br> (어시스트: 김태호) <br>
-                                27' 2팀 김희재 골 <br>(어시스트: 김규현) <br>
-                                34' 3팀 장선우 골 <br> (어시스트: 조재건)
+                                6' 2팀 김희재 골 (김규현 도움) <br> 27' 2팀 김희재 골 <br> 34' 3팀 장선우 골 (조재건 도움)
                             </div>
                         </div>
                     </div>
@@ -565,7 +580,7 @@
     <br>
     <div style="font-size: 50px; position: relative; text-align: right;"><a target="_blank" href="https://www.instagram.com/j_yng_wk_5/">사이트 제작/관리: 20619 주영욱</a></div>
     <div style="font-size: 50px; position: relative; text-align: right;"><a target="_blank" href="https://www.instagram.com/kwanghee_league2/">제작 지원: 광희 2학년 런치리그</a></div>
-    <div style="font-size: 50px; position: relative; text-align: right;"><a target="_blank" href="https://www.instagram.com/kwanghee_khbs/">하이라이트 영상 지원: 광희고등학교 방송부 KHBS</a></div>
+    <div style="font-size: 50px; position: relative; text-align: right;"><a target="_blank" href="https://www.instagram.com/kwanghee_khbs/">영상 지원: 동해광희고등학교 방송부 KHBS</a></div>
     <script>
         function modaloff() {
             $(".modal").css('display', 'none');
