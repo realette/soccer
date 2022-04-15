@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2022학년도 동해광희고등학교 2학년 런치리그 득점자 순위</title>
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="2022학년도 동해광희고등학교 2학년 런치리그 팀별 순위">
+
+    <meta property="og:description" content="런치리그 팀별 순위, 제작: 주영욱, 업데이트: 박현욱">
+
+    <meta property="og:image" content="/soccer/2grade/source/team4.jpg">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        body {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .teamlogodiv {
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 12.5%;
+            left: 7.5%;
+        }
+        
+        #team1logoimg {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            left: 0;
+            margin-left: -22.5%;
+            margin-top: -15%;
+        }
+        
+        #team2logoimg {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            left: 0;
+            margin-left: -30%;
+            margin-top: -25%;
+        }
+        
+        #team3logoimg {
+            width: 59px;
+            height: 59px;
+            position: relative;
+            left: 0;
+            margin-left: -8.25%;
+            margin-top: -8.25%;
+        }
+        
+        #team4logoimg {
+            width: 48px;
+            height: 48px;
+            position: relative;
+            left: 0;
+            top: -7%;
+            margin-left: 0;
+            margin-top: 5%;
+        }
+        
+        #etha,
+        #metha {
+            float: left;
+        }
+        
+        .notgaro {
+            display: flex;
+            border-bottom: 1.5px solid gray;
+            border-right: 1.5px solid gray;
+        }
+        
+        .garo {
+            float: left;
+            border-bottom: 1.5px solid gray;
+        }
+        
+        .vertical {
+            display: flex;
+        }
+        
+        #etha {
+            border-left: 1.5px solid gray;
+            border-right: 1.5px solid gray;
+        }
+        
+        #metha .garo {
+            border-right: 1.5px solid gray;
+        }
+        
+        #table {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #sche {
+            font-size: 45px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .status {
+            font-size: 30px;
+            border-radius: 15px;
+            height: fit-content;
+        }
+        
+        .befo {
+            color: white;
+            background-color: #008cff;
+            border: 3px solid #008cff;
+        }
+        
+        .prog {
+            color: black;
+            background-color: #ff593c;
+            border: 3px solid #ff593c;
+        }
+        
+        .afte {
+            color: white;
+            background-color: rgb(65, 65, 65);
+            border: 3px solid rgb(65, 65, 65);
+        }
+        
+        .reco {
+            color: white;
+            background-color: rgb(95, 159, 0);
+            border: 3px solid rgb(95, 159, 0);
+        }
+        
+        .high {
+            color: white;
+            background-color: rgb(18, 188, 255);
+            border: 3px solid rgb(18, 188, 255);
+        }
+        
+        .space {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .resu {
+            font-size: 30px;
+            border-radius: 15px;
+            height: fit-content;
+            color: rgb(0, 0, 0);
+            background-color: rgb(163, 163, 163);
+            border: 3px solid rgb(163, 163, 163);
+        }
+        
+        .score {
+            color: black;
+            background-color: rgb(243, 214, 214);
+            border: solid rgb(243, 214, 214);
+        }
+        
+        .R {
+            width: fit-content;
+            padding: 5px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #week1,
+        #week2,
+        #week3,
+        #week4,
+        #week5 {
+            width: fit-content;
+            margin: 0;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        #R1,
+        #R2,
+        #R3 {
+            border: black 1px solid;
+            padding: 20px;
+            width: fit-content;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 30px;
+        }
+        
+        #R1 {
+            z-index: 5;
+        }
+        
+        #R2 {
+            z-index: 4;
+        }
+        
+        #R3 {
+            z-index: 3;
+        }
+        
+        hr {
+            border: 1.5px solid gray;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .modal {
+            display: none;
+            position: absolute;
+            width: max-content;
+            z-index: 10;
+            top: 125px;
+            left: 30%;
+            transform: translateX(-50%);
+        }
+        /* Modal Content/Box */
+        
+        .modal-content {
+            text-align: left;
+            padding: 10px;
+            z-index: 11;
+            background-color: #c0c0c0;
+            border: 1px solid #888;
+            width: fit-content;
+            height: fit-content;
+        }
+        
+        .c1l1 {
+            width: 120px;
+            height: 62.4px;
+            border-bottom: 1.5px solid gray;
+        }
+        
+        #week1 {
+            z-index: 100;
+        }
+        
+        #week2 {
+            z-index: 99;
+        }
+        
+        #week3 {
+            z-index: 98;
+        }
+        
+        #week4 {
+            z-index: 97;
+        }
+        
+        #week5 {
+            z-index: 96;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="margin: 20px;">런치리그 득점/도움</h3>
+    <div id="table">
+        <!--
+        <div id="etha">
+            <div style="width: 120px; border-top: 1.5px solid gray; border-bottom: 1.5px solid gray;">
+                순위
+            </div>
+            <div class="c1l1">
+                1위
+            </div>
+            <div class="c1l1">
+                2위
+            </div>
+            <div class="c1l1">
+                3위
+            </div>
+            <div class="c1l1">
+                4위
+            </div>
+        </div>
+    -->
+        <div id="metha">
+
+            <div class="vertical">
+                <div class="garo" style="width: 120px; border-top: 1.5px solid">
+                    팀
+                </div>
+                <div class="garo" style="width: 200px; border-top: 1.5px solid">
+                    이름
+                </div>
+                <div class="garo" style="width: 150px; border-top: 1.5px solid">
+                    득점
+                </div>
+                <div class="garo" style="width: 150px; border-top: 1.5px solid">
+                    도움
+                </div>
+            </div>
+
+            <div class="vertical" id="조재건" value="3">
+                <div class="garo" style="width: 120px;">
+                    <!--팀명-->
+                    3팀
+                </div>
+                <div class="garo" style="width: 200px;">
+                    <!--이름-->
+                    조재건
+                </div>
+                <div id="score" class="garo" style="width: 150px;">
+                    <!-- 득점 수 -->
+                    몰루
+                </div>
+                <div id="score" class="garo" style="width: 150px;">
+                    <!-- 도움 수 -->
+                    몰루
+                </div>
+            </div>
+
+        </div>
+        <!--
+    </div>
+-->
+
+</body>
+
+</html>
