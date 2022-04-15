@@ -139,6 +139,12 @@
             border: 3px solid rgb(95, 159, 0);
         }
         
+        .high {
+            color: white;
+            background-color: rgb(18, 188, 255);
+            border: 3px solid rgb(18, 188, 255);
+        }
+        
         .space {
             margin-left: 10px;
             margin-right: 10px;
@@ -178,7 +184,8 @@
         }
         
         #R1,
-        #R2 {
+        #R2,
+        #R3 {
             border: black 1px solid;
             padding: 20px;
             width: fit-content;
@@ -186,6 +193,18 @@
             left: 50%;
             transform: translateX(-50%);
             margin-bottom: 30px;
+        }
+        
+        #R1 {
+            z-index: 5;
+        }
+        
+        #R2 {
+            z-index: 4;
+        }
+        
+        #R3 {
+            z-index: 3;
         }
         
         hr {
@@ -224,6 +243,26 @@
             width: 120px;
             height: 62.4px;
             border-bottom: 1.5px solid gray;
+        }
+        
+        #week1 {
+            z-index: 100;
+        }
+        
+        #week2 {
+            z-index: 99;
+        }
+        
+        #week3 {
+            z-index: 98;
+        }
+        
+        #week4 {
+            z-index: 97;
+        }
+        
+        #week5 {
+            z-index: 96;
         }
     </style>
 </head>
@@ -466,8 +505,8 @@
                     <div class="garo space resu" onmouseover="modal1R2()" onmouseout="modaloff()">
                         경기 기록
                     </div>
-                    <div class="garo space status reco">
-                        <a target="_blank" href="https://www.instagram.com/tv/Cb-Mcc1pOrKNElYjAgbvB3lJr1YtL_3cYoNlZs0/">골 영상</a>
+                    <div class="garo space status high">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=1cJYprHcbSA">하이라이트</a>
                     </div>
                     <div id="modal1R2" class="modal">
                         <div class="modal-content">
@@ -583,7 +622,7 @@
                     <div id="modal1R6" class="modal">
                         <div class="modal-content">
                             <div class="container">
-                                7' 2팀 김희재 골 (김규현 어시) 11' <br> 3팀 조재건 (오원석 어시)
+                                7' 2팀 김희재 골 (김규현 어시) <br>11' 3팀 조재건 (오원석 어시)
                             </div>
                         </div>
                     </div>
@@ -615,7 +654,7 @@
                     <div id="modal2R1" class="modal">
                         <div class="modal-content">
                             <div class="container">
-                                6' 3팀 장선우 골 (김도원 어시) 8' <br> 3팀 김도원 골 (오원석 어시) <br> 22' 4팀 성기호 골 (임영규 어시) <br> 25' 3팀 장선우 골(김도원 어시) <br> 29' 4팀 임영규 골
+                                6' 3팀 장선우 골 (김도원 어시) <br>8' 3팀 김도원 골 (오원석 어시) <br> 22' 4팀 성기호 골 (임영규 어시) <br> 25' 3팀 장선우 골(김도원 어시) <br> 29' 4팀 임영규 골
                             </div>
                         </div>
                     </div>
